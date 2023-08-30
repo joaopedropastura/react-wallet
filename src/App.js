@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Test from './components/teste';
+import ToolBar from './components/toolBar';
+import { CounterProvider } from './context/counter';
+import { PaymentProvider } from './context/payment';
+import CounterPage from './pages/counterPage';
+import NewPaymentPage from './pages/newPaymentPage'
+
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <CounterProvider>
+        <PaymentProvider>
+          <ToolBar/>
+          <Routes>
+            <Route path='/teste'  element={<Test/>}/>
+            <Route path='/counter' element={<CounterPage />} />
+            <Route path='/new-wallet' element={<NewPaymentPage/>} />
+          </Routes>
+        </PaymentProvider>
+      </CounterProvider>
   );
 }
-
 export default App;
