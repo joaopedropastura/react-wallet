@@ -16,6 +16,7 @@ const ToolBar = () => {
             <Link to="/counter">Counter</Link>
             <Link to="/home">Link</Link>
             <Link to="/new-wallet">new wallet</Link>
+            <Link to="/list-bill">list</Link>
             
           </Nav>
         </Navbar.Collapse>
