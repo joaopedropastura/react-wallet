@@ -1,14 +1,13 @@
 import { useState } from "react";
 
-function useBind(defaultValue, placeholder) {
+function useBind(defaultValue) {
     const [value, setValue] = useState(defaultValue);
 
     const bind = {
         value,
         onChange: e => {
             setValue(e.target.value);
-        },
-        placeholder
+        }
     }
 
     const reset = () => setValue(defaultValue);

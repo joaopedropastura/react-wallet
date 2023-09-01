@@ -17,6 +17,7 @@ export default function ListBill() {
                 <h4>Data</h4>
                 <h4>Valor</h4>
             </div>
+            <hr/>
             <div className="list">
                 {list.map(e => <Item item = {e}/>)}
             </div>
