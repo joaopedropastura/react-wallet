@@ -10,6 +10,7 @@ import { Routes, Route } from "react-router-dom";
 import ReqPage from './pages/reqPage';
 import MusicPage from './pages/musicPage';
 import FormWallet from './components/formWallet';
+import Countries from './pages/countriesPage';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
             <Route path='/new-wallet' element={<NewPaymentPage/>} />
             <Route path='/list-bill' element={<HomePage/>} />
             <Route path='/req' element={<ReqPage/>} />
-            <Route path='/musicpage' element={<MusicPage/>} />
+            <Route path='/music-page' element={<MusicPage/>} />
+            <Route path='/countries' element={<Countries/>} />
           </Routes>
         </PaymentProvider>
       </CounterProvider>
