@@ -6,11 +6,13 @@ import CounterPage from './pages/counterPage';
 import NewPaymentPage from './pages/newPaymentPage'
 import HomePage from './pages/homePage';
 
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Router } from "react-router-dom";
 import ReqPage from './pages/reqPage';
 import MusicPage from './pages/musicPage';
 import FormWallet from './components/formWallet';
 import Countries from './pages/countriesPage';
+import Login from './pages/loginPage'
+
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
             <Route path='/req' element={<ReqPage/>} />
             <Route path='/music-page' element={<MusicPage/>} />
             <Route path='/countries' element={<Countries/>} />
+            <Route path='/login' element={<Login/>} />
           </Routes>
         </PaymentProvider>
       </CounterProvider>
