@@ -12,6 +12,7 @@ import MusicPage from './pages/musicPage';
 import FormWallet from './components/formWallet';
 import Countries from './pages/countriesPage';
 import Login from './pages/loginPage'
+import RegisterPage from './pages/userRegisterPage';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path='/music-page' element={<MusicPage/>} />
             <Route path='/countries' element={<Countries/>} />
             <Route path='/login' element={<Login/>} />
+            <Route path='/register' element={<RegisterPage/>} />
           </Routes>
         </PaymentProvider>
       </CounterProvider>
